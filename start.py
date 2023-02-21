@@ -30,7 +30,7 @@ def page_main():
 
 @app.route('/candidate/<int:x>')
 def page_candidate(x):
-    res = f'<img src ="({candidates[x - 1]["picture"]})">\n\n<pre>\n'
+    res = f'<img src ="{candidates[x - 1]["picture"]}">\n\n<pre>\n'
 
     res += f"""{candidates[x - 1]["name"]} -
 {candidates[x - 1]["position"]}
